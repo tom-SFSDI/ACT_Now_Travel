@@ -1,10 +1,10 @@
 {
   "name": "act_now_travel",
   "version": "1.0.0",
-  "description": "mock travel agency website",
+  "description": "A modern travel agency giving consumers a broad list of travel options. We provide our travelers with information on various cities they would like to travel to, weather details about their preferred destination, as well as a list of events to attend after they arrive.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/tom-SFSDI/ACT_Now_Travel/issues"
   },
-  "homepage": "https://github.com/tom-SFSDI/ACT_Now_Travel#readme",
-  "dependencies": {
-    "webpack": "^5.44.0"
-  }
+  "homepage": "https://github.com/tom-SFSDI/ACT_Now_Travel#readme"
 }
