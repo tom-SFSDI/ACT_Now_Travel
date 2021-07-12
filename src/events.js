@@ -11212,7 +11212,3 @@ let eventsArray = events.forEach(element => {
   console.log(element._embedded.events)
 });
 // console.log(typeof(eventsArray))
-
-eventsArray.forEach(name => {
-  console.log(name)
-});

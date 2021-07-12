@@ -1,4 +1,10 @@
 body {
-    background-color: whitesmoke;
+    background-color: aqua;
     color: black
+}
+
+.center {
+    text-align: center;
+    font-size: large;
+    font-family: fantasy;
 }
