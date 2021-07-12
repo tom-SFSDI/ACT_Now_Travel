@@ -1,0 +1,22 @@
+{
+  "name": "act_now_travel",
+  "version": "1.0.0",
+  "description": "mock travel agency website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom-SFSDI/ACT_Now_Travel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom-SFSDI/ACT_Now_Travel/issues"
+  },
+  "homepage": "https://github.com/tom-SFSDI/ACT_Now_Travel#readme",
+  "dependencies": {
+    "webpack": "^5.44.0"
+  }
+}
