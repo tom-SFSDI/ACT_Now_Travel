@@ -5,7 +5,7 @@ document.getElementById('get_info').addEventListener('click', () => {
 
   fetch('https://goweather.herokuapp.com/weather/' + value)
     .then(function(response) {
-      console.log("you made it")
+      console.log(`https://goweather.herokuapp.com/weather/ ${value}`)
       return response.json()
     })
     .then(function(data) {
