@@ -3,3 +3,19 @@ nav {
     padding: 20px;
     margin: 0;
 }
+
+#travelTips {
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#welcome {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
