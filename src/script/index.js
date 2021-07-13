@@ -67,7 +67,6 @@ document.getElementById('get_info').addEventListener('click', () => {
   //document.location.href = '../html/confirmation.html';
 })
 
-
 function convertCelcToFar(tempInCelc) {
   console.log(tempInCelc);
   return Math.floor(tempInCelc * 1.8 + 32)
