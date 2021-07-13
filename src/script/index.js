@@ -16,6 +16,14 @@ document.getElementById('get_info').addEventListener('click', () => {
       return airportCodes[4]
     }
   }
+  const bookNowButton = document.createElement('button', id = 'book_now')
+  document.getElementById('priceButtonLocation').appendChild(bookNowButton)
+  bookNowButton.innerText = `Book Now!`
+
+
+  let departDate = document.getElementById('dateOfTravel').value
+  console.log(departDate)
+    // let returnDate = 
 
   fetch('https://goweather.herokuapp.com/weather/' + value)
     .then(function(response) {
@@ -33,9 +41,11 @@ document.getElementById('get_info').addEventListener('click', () => {
       document.getElementById('todaysWeather').innerText = weatherForecast.description;
     })
   let baseURL = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/ORD-sky/`
+  let dynamicURL = `${baseURL}${airportSelected(value)}${departDate}`
+  console.log(dynamicURL)
     // console.log(airportSelected(value))
     // document.getElementById('destination_dropdown').value()
-  fetch(`${baseURL}${airportSelected(value)}2021-08-15?inboundpartialdate=2021-09-12`, {
+  fetch(dynamicURL, {
       "method": "GET",
       "headers": {
         "x-rapidapi-key": "e8336ed4dbmshc74bad6810bd5a9p1ea62djsne419c89fee3b",
@@ -48,7 +58,8 @@ document.getElementById('get_info').addEventListener('click', () => {
     })
     .then(data => {
       console.log(data)
-      data.Quotes[0].MinPrice
+        // document.getElementById('book_now').display = 'block'
+      document.getElementById('price').innerText = `Wowzers. We found a flight for $${data.Quotes[0].MinPrice}!!`
     })
     .catch(err => {
       console.error(err);
