@@ -11,16 +11,30 @@
 </head>
 
 <body>
-    <nav></nav>
+    <nav>
+        <a href="monthlySpecials.html">Monthly Specials</a>
+        <a href="travelTips.html">Travel Tips</a>
+    </nav>
     <header class='center'>ACT Now Travel Agency LLC.</header>
     <section id='welcome'>
         <p>
             Welcome to ACT Now Travel Agency. We are an up and coming travel agency looking to fulfill all of your travel needs. Let's start by researching some possible destinations. Please enter a destination and we will provide you with some information about
             the area and see if you wish to continue.
         </p>
-        <input type="search" placeholder="Example: Destin, FL"></input>
-        <div></div>
-        <button id='destination_search'>Destination Info</button>
+        <form>
+            <label for="destinations">Choose a destination:</label>
+            <select name="destinations" id="destination_dropdown">
+                <option value="DAL">Dallas</option>
+                <option value="ORL">Orlando</option>
+                <option value="LA">Los Angeles</option>
+                <option value="NOLA">New Orleans</option>
+                <option value="NYC">New York City</option>
+            </select>
+        </form><button id='get_info'>Get Info</button>
+
+        <label for="travelDate">Departure Date</label>
+        <input type="date" name="travelDate" id="dateOfTravel">
+        <button id='book_now'>Book Now!</button>
     </section id='about us'>
     <div></div>
 </body>
