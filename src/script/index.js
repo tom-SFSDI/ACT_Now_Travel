@@ -19,7 +19,7 @@ document.getElementById('get_info').addEventListener('click', () => {
   const bookNowButton = document.createElement('button', id = 'book_now')
   document.getElementById('priceButtonLocation').appendChild(bookNowButton)
   bookNowButton.innerText = `Book Now!`
-
+  bookNowButton.href = `confirmation.html`
 
   let departDate = document.getElementById('dateOfTravel').value
   console.log(departDate)
