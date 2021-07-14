@@ -19,7 +19,7 @@ document.getElementById('get_info').addEventListener('click', () => {
   const bookNowButton = document.createElement('button', id = 'book_now')
   document.getElementById('priceButtonLocation').appendChild(bookNowButton)
   bookNowButton.innerText = `Book Now!`
-  bookNowButton.href = `confirmation.html`
+  bookNowButton.href = `src/html/confirmation.html`
   document.getElementById('weatherTable').style.display = 'block'
 
   let departDate = document.getElementById('dateOfTravel').value
@@ -61,7 +61,7 @@ document.getElementById('get_info').addEventListener('click', () => {
       console.log(data)
         // document.getElementById('book_now').display = 'block'
       document.getElementById('price').innerText = `Wowzers. We found a flight for $${data.Quotes[0].MinPrice}!!`
-      localStorage.setItem('savedPrice',JSON.stringify(data.Quotes[0].MinPrice));
+      localStorage.setItem('savedPrice', JSON.stringify(data.Quotes[0].MinPrice));
       localStorage.setItem('savedDestination', value);
     })
     .catch(err => {
