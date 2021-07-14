@@ -1,0 +1,98 @@
+body {
+    background-color: gainsboro
+}
+
+.invoiceBox {
+    display: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    background-color: white;
+    color: #555;
+}
+
+.invoiceBox table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoiceBox table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoiceBox table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.invoiceBox table tr.top table td {
+    padding-bottom: 20px;
+}
+
+.invoiceBox table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoiceBox table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.invoiceBox table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoiceBox table tr.details td {
+    padding-bottom: 20px;
+}
+
+.invoiceBox table tr.item td {
+    border-bottom: 1px solid #eee;
+}
+
+.invoiceBox table tr.item.last td {
+    border-bottom: none;
+}
+
+.invoiceBox table tr.total td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .invoiceBox table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .invoiceBox table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/** RTL **/
+
+.invoiceBox.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.invoiceBox.rtl table {
+    text-align: right;
+}
+
+.invoiceBox.rtl table tr td:nth-child(2) {
+    text-align: left;
+}
