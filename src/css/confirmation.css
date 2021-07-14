@@ -1,7 +1,3 @@
-body {
-    background-color: gainsboro
-}
-
 .invoiceBox {
     display: none;
     max-width: 800px;
@@ -81,18 +77,36 @@ body {
     }
 }
 
-
-/** RTL **/
-
-.invoiceBox.rtl {
-    direction: rtl;
-    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+#confirmationList input {
+    padding: 6px;
+    margin: 3px;
 }
 
-.invoiceBox.rtl table {
-    text-align: right;
+#street, #email, #phone, #name {
+    width: 358px;
 }
 
-.invoiceBox.rtl table tr td:nth-child(2) {
-    text-align: left;
+#state {
+    width: 80px;
+    height: 29px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    box-shadow: inset 0 3px 6px rgb(0 0 0 / 10%);
+}
+
+#zip {
+    width: 60px;;
+}
+
+#paidButton {
+    padding: 6px;
+    margin-left: 3px;
+    border-radius: 5px;
+    border: 2px solid #c4c4c4;
+    width: 110px;
+}
+
+#confirmationMessage {
+    margin-left: 43px;
+    font-size: 18px;
 }
