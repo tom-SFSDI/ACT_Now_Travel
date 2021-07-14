@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: gainsboro;
     color: black
 }
 
@@ -61,4 +61,18 @@ nav {
     text-align: center;
     padding: 20px;
     margin: 0;
+    
+}
+
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.center {
+    font-size: 28px;
 }

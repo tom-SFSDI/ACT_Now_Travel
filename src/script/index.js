@@ -62,6 +62,7 @@ document.getElementById('get_info').addEventListener('click', () => {
         // document.getElementById('book_now').display = 'block'
       document.getElementById('price').innerText = `Wowzers. We found a flight for $${data.Quotes[0].MinPrice}!!`
       localStorage.setItem('savedPrice',JSON.stringify(data.Quotes[0].MinPrice));
+      localStorage.setItem('savedDestination', value);
     })
     .catch(err => {
       console.error(err);
