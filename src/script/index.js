@@ -20,6 +20,7 @@ document.getElementById('get_info').addEventListener('click', () => {
   document.getElementById('priceButtonLocation').appendChild(bookNowButton)
   bookNowButton.innerText = `Book Now!`
   bookNowButton.href = `confirmation.html`
+  document.getElementById('weatherTable').style.display = 'block'
 
   let departDate = document.getElementById('dateOfTravel').value
   console.log(departDate)
