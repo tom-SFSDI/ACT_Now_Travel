@@ -20,7 +20,7 @@
     <header class='center'>ACT Now Travel Agency LLC.</header>
     <section>
         <br><br>
-        <p id="confirmationMessage">Thank you for your interest in <span id="destination"></span>.  We were pleased to find you a flight for $<span id="tripCost"></span>.  Please fill out your payment details below to book your trip!</p>
+        <p id="confirmationMessage">Thank you for your interest in <span id="destination"></span>. We were pleased to find you a flight for $<span id="tripCost"></span>. Please fill out your payment details below to book your trip!</p>
     </section>
     <section id='confirmation'>
         <form id='confirmationForm'>
@@ -99,6 +99,11 @@
                     <input type="text" id="phone" name="phone" placeholder="Phone">
                 </li>
                 <li>
+                    <select id="paymentType">
+                        <option value="Payment Type">Payment Type</option>
+                        <option id="BTC" value="Bitcoin">Bitcoin</option>
+                        <option id="Ether" value="Ethereum">Ethereum</option>
+                    </select>
                     <button id='paidButton' type="button">Pay Now!</button>
                 </li>
             </ul>

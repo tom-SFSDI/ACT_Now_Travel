@@ -82,7 +82,10 @@
     margin: 3px;
 }
 
-#street, #email, #phone, #name {
+#street,
+#email,
+#phone,
+#name {
     width: 358px;
 }
 
@@ -95,7 +98,7 @@
 }
 
 #zip {
-    width: 60px;;
+    width: 60px;
 }
 
 #paidButton {
