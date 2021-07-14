@@ -4,6 +4,7 @@
 <head>
     <script src="../script/confirmation.js" defer></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/confirmation.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,29 +18,108 @@
         <form id='confirmationForm'>
             <ul id='confirmationList'>
                 <li>
-                    <input type="text" id="name" name="name" placeholder="Name"><br><br>                
+                    <input type="text" id="name" name="name" placeholder="Name">
                 </li>
                 <li>
-                    <input type="text" id="street" name="street" placeholder="Street Address">               
+                    <input type="text" id="street" name="street" placeholder="Street Address">
                 </li>
                 <li>
-                    <input type="text" id="city" name="city" placeholder="City">               
+                    <input type="text" id="city" name="city" placeholder="City">
 
-                    <input type="text" id="state" name="state" placeholder="State">                
+                    <input type="text" id="state" name="state" placeholder="State">
 
-                    <input type="text" id="zip" name="zip" placeholder="Zip"><br><br>                
+                    <input type="text" id="zip" name="zip" placeholder="Zip">
                 </li>
                 <li>
-                    <input type="text" id="email" name="email" placeholder="Email"><br><br>                
+                    <input type="text" id="email" name="email" placeholder="Email">
                 </li>
                 <li>
-                    <input type="text" id="phone" name="phone" placeholder="Phone"><br><br>                
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
                 </li>
             </ul>
         </form>
-        <button id='paidButton' type="button">Pay Now!</button>  
+        <button id='paidButton' type="button">Pay Now!</button>
         <div></div>
-        <a href="index.html"><button id='return_home'>Return Home</button></a>
+
+        <div class="invoiceBox">
+            <table cellpadding="0" cellspacing="0">
+                <tr class="top">
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <img src="../../ACT-Now-Logo.png" style="width: 100%; max-width: 300px" />
+                                </td>
+
+                                <td>
+                                    Invoice #: 556 <br /> Created: July 14, 2021<br /> Due: August 1, 2021
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="information">
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td>
+                                    ACT Now Travel<br /> 12345 Sunny Road<br /> Garland, TX 75044
+                                </td>
+
+                                <td id="customer">
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="heading">
+                    <td>Payment Method</td>
+
+                    <td>Bitcoin</td>
+                </tr>
+
+                <tr class="details">
+                    <td>Bitcoin</td>
+
+                    <td>1.4329 BTC</td>
+                </tr>
+
+                <tr class="heading">
+                    <td>Item</td>
+
+                    <td>Price</td>
+                </tr>
+
+                <tr class="item">
+                    <td>Website design</td>
+
+                    <td>$300.00</td>
+                </tr>
+
+                <tr class="item">
+                    <td>Hosting (3 months)</td>
+
+                    <td>$75.00</td>
+                </tr>
+
+                <tr class="item last">
+                    <td>Domain name (1 year)</td>
+
+                    <td>$10.00</td>
+                </tr>
+
+                <tr class="total">
+                    <td></td>
+
+                    <td id="total">Total: 1.4329 BTC</td>
+                </tr>
+            </table>
+        </div>
+
+        <div></div>
     </section id='about us'>
     <div></div>
 </body>
