@@ -32,14 +32,13 @@ document.getElementById('get_info').addEventListener('click', () => {
     });
   const baseURL = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/ORD-sky/`;
   const dynamicURL = `${baseURL}${airportSelected(value)}${departDate}`;
-
   fetch(dynamicURL, {
-      'method': 'GET',
-      'headers': {
-        'x-rapidapi-key': 'e8336ed4dbmshc74bad6810bd5a9p1ea62djsne419c89fee3b',
-        'x-rapidapi-host': 'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com',
-      },
-    })
+    'method': 'GET',
+    'headers': {
+      'x-rapidapi-key': 'e8336ed4dbmshc74bad6810bd5a9p1ea62djsne419c89fee3b',
+      'x-rapidapi-host': 'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com',
+    },
+  })
     .then((response) => {
       return response.json();
     })
