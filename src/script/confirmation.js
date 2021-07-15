@@ -26,6 +26,7 @@ document.getElementById('paidButton').onclick = function() {
 };
 
 function btcConvert(dollarValue) {
+  const btcValue = 35000;
   const convertedValue = dollarValue / btcValue;
   return convertedValue;
 }
