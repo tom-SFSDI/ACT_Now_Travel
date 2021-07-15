@@ -98,3 +98,11 @@ nav a:hover {
 #bookNow {
     display: none;
 }
+
+.weatherHide {
+    display: none;
+}
+
+.weatherShow {
+    display: block;
+}

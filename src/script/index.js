@@ -16,6 +16,13 @@ document.getElementById('get_info').addEventListener('click', () => {
     }
   };
   document.getElementById('weatherTable').style.display = 'block';
+
+  if (document.querySelector('.weatherShow')) {
+    document.querySelector('.weatherShow').classList.replace('weatherShow', 'weatherHide');
+  }
+
+  document.getElementById(value).classList.remove('weatherHide');
+  document.getElementById(value).classList.add('weatherShow');
   document.getElementById('bookNow').style.display = 'block';
   const departDate = document.getElementById('dateOfTravel').value;
   fetch('https://goweather.herokuapp.com/weather/' + value)
