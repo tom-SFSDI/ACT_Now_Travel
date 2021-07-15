@@ -1,6 +1,5 @@
 document.getElementById('get_info').addEventListener('click', () => {
   const value = document.getElementById('destination_dropdown').value;
-  let weatherForecast = {};
   const airportCodes = [`DFW-sky/`, `MCO-sky/`, `LAX-sky/`, `MSY-sky/`, `JFK-sky/`];
   const airportSelected = (string) => {
     if (string === `Dallas`) {
@@ -15,7 +14,6 @@ document.getElementById('get_info').addEventListener('click', () => {
       return airportCodes[4];
     }
   };
-  document.getElementById('weatherTable').style.display = 'block';
 
   if (document.querySelector('.weatherShow')) {
     document.querySelector('.weatherShow').classList.replace('weatherShow', 'weatherHide');
@@ -25,18 +23,6 @@ document.getElementById('get_info').addEventListener('click', () => {
   document.getElementById(value).classList.add('weatherShow');
   document.getElementById('bookNow').style.display = 'block';
   const departDate = document.getElementById('dateOfTravel').value;
-  fetch('https://goweather.herokuapp.com/weather/' + value)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      weatherForecast = data;
-      document.getElementById('day1Temp').innerText = weatherForecast.forecast[0].temperature;
-      document.getElementById('day2Temp').innerText = weatherForecast.forecast[1].temperature;
-      document.getElementById('day3Temp').innerText = weatherForecast.forecast[2].temperature;
-
-      document.getElementById('todaysWeather').innerText = weatherForecast.description;
-    });
   const baseURL = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/ORD-sky/`;
   const dynamicURL = `${baseURL}${airportSelected(value)}${departDate}`;
   fetch(dynamicURL, {
