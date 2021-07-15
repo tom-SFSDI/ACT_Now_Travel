@@ -3,7 +3,7 @@ body {
     color:black;
     padding: 0;
     margin: 0;
-    font-family: fantasy, cursive, Impact, 'Arial Narrow Bold', sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #notStolenLogo {
     max-width: 150px;
@@ -16,10 +16,13 @@ body {
 } */
 
 #welcome {
+    display: flex;
     color: white;
     font-size: 24px;
-    height: 300px;
+    /* height: 400px; */
     padding: 30px;
+    justify-content: center;
+    align-content: center;
     /* display: flex; */
     /* bottom: 0; */
     /* height: 40%; */
@@ -39,8 +42,14 @@ body {
     /* justify-content: center;
     align-items: center; */
   }
-  #welcome > p {
-      margin-right: 17em;
+  #welcome p {
+      /* margin-right: 17em; */
+      font-size: 40px;
+      font-style: italic;
+  }
+
+  #welcome > * {
+    flex-basis: 50%;
   }
 
 .center {
@@ -104,6 +113,11 @@ nav a:hover {
 
 #bookNow {
     display: none;
+    float: right;
+    padding: 30px 60px;
+    font-size: 20px;
+    
+    margin-right: 45px;
 }
 
 .weatherHide {
@@ -114,9 +128,33 @@ nav a:hover {
     padding: 20px;
     display: block;
 }
-#superLowFares {
-    color: black;
-    float: right;
-    padding-right: 75px;
-    vertical-align: center;
+
+#weatherWidget {
+  /* display: flex;
+  justify-content:  flex-end; */
 }
+
+#superLowFares {
+    color: white;
+    float: right;
+    /* padding-right: 75px; */
+    margin-bottom: 50px;
+    /* vertical-align: center; */
+    font-size: 40px;
+    font-style: italic;
+}
+#destination_dropdown {
+  margin-bottom: 15px;
+}
+/*  */
+/* #leftWelcome { */
+/*  */
+  /* max-width: 50%; */
+  /* display: inline-block; */
+/*    */
+/* } */
+#rightWelcome {
+
+  text-align: right;
+}
+
