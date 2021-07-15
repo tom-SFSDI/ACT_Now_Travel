@@ -1,7 +1,47 @@
 body {
-    background-color: gainsboro;
-    color: black
+    background-color: white;
+    color:black;
+    padding: 0;
+    margin: 0;
+    font-family: fantasy, cursive, Impact, 'Arial Narrow Bold', sans-serif
 }
+#notStolenLogo {
+    max-width: 150px;
+    max-height: 100px;
+    
+}
+/* body > * {
+    z-index: 2;
+    position: relative;
+} */
+
+#welcome {
+    color: white;
+    font-size: 24px;
+    height: 300px;
+    padding: 30px;
+    /* display: flex; */
+    /* bottom: 0; */
+    /* height: 40%; */
+    /* left: 0; */
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+    /* width: 100%; */
+    background-image: url('../../planeOverWater.png');
+    /* background-size:100% 100%; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: contain; */
+    /* float: left; */
+    /* z-index: 1; */
+    /* justify-content: center;
+    align-items: center; */
+  }
+  #welcome > p {
+      margin-right: 17em;
+  }
 
 .center {
     text-align: center;
@@ -42,7 +82,7 @@ input {
 }
 
 nav {
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
     margin: 0;
 }
@@ -50,6 +90,8 @@ nav {
 nav a {
     padding-right: 20px;
     text-decoration: none;
+    padding-top: inherit;
+    float: right;
 }
 
 nav a:hover {
@@ -69,5 +111,12 @@ nav a:hover {
 }
 
 .weatherShow {
+    padding: 20px;
     display: block;
+}
+#superLowFares {
+    color: black;
+    float: right;
+    padding-right: 75px;
+    vertical-align: center;
 }
