@@ -12,14 +12,16 @@
 
 <body>
     <nav>
+        <img src='ACT-Now-Logo.png' id="notStolenLogo">
         <a href="src/html/monthlySpecials.html">Monthly Specials</a>
         <a href="src/html/travelTips.html">Travel Tips</a>
     </nav>
-    <header class='center'>ACT Now Travel Agency LLC.</header>
+    <div id='coverPhoto'></div>
     <section id='welcome'>
+        <!-- <header class='center'>ACT Now Travel Agency LLC.</header> -->
+       <div id='leftWelcome'>
         <p>
-            Welcome to ACT Now Travel Agency. We are an up and coming travel agency looking to fulfill all of your travel needs. Let's start by researching some possible destinations. Please enter a destination and we will provide you with some information about
-            the area and see if you wish to continue.
+            Where travel and simplicity meet.
         </p>
         <form>
             <label for="destinations">Choose a destination:</label>
@@ -35,31 +37,40 @@
         <label for="travelDate">Departure Date</label>
         <input type="date" name="travelDate" id="dateOfTravel">
         <button id='get_info'>Get Info & Pricing</button>
-    </section>
-    <section>
-        <div class="weatherHide" id="Dallas">
-            <a target="_blank" href="https://www.booked.net/weather/dallas-26868"><img src="https://w.bookcdn.com/weather/picture/32_26868_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
-        </div>
-        <div class="weatherHide" id="Orlando">
-            <a target="_blank" href="https://www.booked.net/weather/orlando-19887"><img src="https://w.bookcdn.com/weather/picture/32_19887_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
-        </div>
-        <div class="weatherHide" id="LosAngeles">
-            <a target="_blank" href="https://www.booked.net/weather/los-angeles-18353"><img src="https://w.bookcdn.com/weather/picture/32_18353_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
-        </div>
-        <div class="weatherHide" id="NewOrleans">
-            <a target="_blank" href="https://www.booked.net/weather/new-orleans-18131"><img src="https://w.bookcdn.com/weather/picture/32_18131_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
-        </div>
-        <div class="weatherHide" id="NewYorkCity">
-            <a target="_blank" href="https://www.booked.net/weather/new-york-18103"><img src="https://w.bookcdn.com/weather/picture/32_18103_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
-        </div>
-    </section>
-    <section id='superLowFares'>
-        <h2 id='price'></h2>
-    </section>
-    <div>
-        <!-- <a id='priceButtonLocation' href='></a> -->
-        <button id='bookNow' onclick='window.location.href="src/html/confirmation.html"'>Book Now!</button>
+        <section id='weatherWidget'>
+            <div class="weatherHide" id="Dallas">
+                <a target="_blank" href="https://www.booked.net/weather/dallas-26868"><img src="https://w.bookcdn.com/weather/picture/32_26868_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+            </div>
+            <div class="weatherHide" id="Orlando">
+                <a target="_blank" href="https://www.booked.net/weather/orlando-19887"><img src="https://w.bookcdn.com/weather/picture/32_19887_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+            </div>
+            <div class="weatherHide" id="LosAngeles">
+                <a target="_blank" href="https://www.booked.net/weather/los-angeles-18353"><img src="https://w.bookcdn.com/weather/picture/32_18353_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+            </div>
+            <div class="weatherHide" id="NewOrleans">
+                <a target="_blank" href="https://www.booked.net/weather/new-orleans-18131"><img src="https://w.bookcdn.com/weather/picture/32_18131_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+            </div>
+            <div class="weatherHide" id="NewYorkCity">
+                <a target="_blank" href="https://www.booked.net/weather/new-york-18103"><img src="https://w.bookcdn.com/weather/picture/32_18103_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+            </div>
+    
+        </section>
     </div>
+    <div id='rightWelcome'>
+        <section id='superLowFares'>
+            <h2 id='price'></h2>
+            <div>
+                <button id='bookNow' onclick='window.location.href="src/html/confirmation.html"'>Book Now!</button>
+            </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- <section id='superLowFares'>
+        <h2 id='price'></h2> -->
+    <!-- </section> -->
+        <!-- <a id='priceButtonLocation' href='></a> -->
+        <!-- <button id='bookNow' onclick='window.location.href="src/html/confirmation.html"'>Book Now!</button> -->
 </body>
 
 </html>
