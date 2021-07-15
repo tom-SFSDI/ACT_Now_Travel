@@ -4,7 +4,10 @@
   "description": "A modern travel agency giving consumers a broad list of travel options. We provide our travelers with information on various cities they would like to travel to, weather details about their preferred destination, as well as a list of events to attend after they arrive.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/tom-SFSDI/ACT_Now_Travel/issues"
   },
-  "homepage": "https://github.com/tom-SFSDI/ACT_Now_Travel#readme"
+  "homepage": "https://github.com/tom-SFSDI/ACT_Now_Travel#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-google": "^0.14.0",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {}
 }

@@ -6,6 +6,10 @@
 - Clone the project to your local workstation.
 - After cloning the project remember to CD into the project.
 - Run ```NPM Install``` to install the required NPM Packages.
+  - Review the .eslint.json file for eslint rules.
+  - The following command will run eslint ```npm run lint```.
+  - If errors are detected, the following command MAY fix some errors ```npm run lint-fix```.
+  - If desired, utilize ```npm run server``` to launch a live-server while coding.
 
 ## What To Do Once You Have Joined The Project
 
