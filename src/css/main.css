@@ -3,6 +3,25 @@ body {
     color: black
 }
 
+li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+  text-align: center;
+}
+.container {
+  display: flex;
+  margin-left: 45px;
+  width: 450px;
+  height: 100px;
+    background-image: url(https://pixabay.com/images/id-157126/);
+  justify-content: center;
+align-items: center;
+}
+
 .center {
     text-align: center;
     font-size: large;
@@ -48,7 +67,7 @@ input {
     display: none;
     border: 1px solid black;
     border-collapse: collapse;
-    width: 12rem
+    width: 36rem
 }
 
 #weatherTable td,

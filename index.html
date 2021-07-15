@@ -36,22 +36,14 @@
         <input type="date" name="travelDate" id="dateOfTravel">
         <button id='get_info'>Get Info & Pricing</button>
     </section>
-    <section>
-        <table id='weatherTable'>
-            <tr>
-                <th id='todaysWeather' colspan="3"></th>
-            </tr>
-            <tr>
-                <th>Day 1</th>
-                <th>Day 2</th>
-                <th>Day 3</th>
-            </tr>
-            <tr>
-                <td id='day1Temp'></td>
-                <td id='day2Temp'></td>
-                <td id='day3Temp'></td>
-            </tr>
-        </table>
+    <section id='weatherTable'>
+
+        <div class='container'><div id='todaysWeather'></div></div>
+        <ul>
+            <li id='day1Temp'></li>
+            <li id='day2Temp'></li>
+            <li id='day3Temp'></li>
+        </ul>
     </section>
     <section id='superLowFares'>
         <h2 id='price'></h2>
