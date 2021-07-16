@@ -12,8 +12,6 @@ function error(err) {
 }
 window.navigator.geolocation.getCurrentPosition(success, error);
 
-// noticed a bug testing this around 11pm... current date was throwing an error in the fetch to skyscanner.  Not sure if related to this default
-// date setter or not.  Testing tomorrow...
 document.getElementById('dateOfTravel').value = new Date().toLocaleDateString('en-CA');
 
 document.getElementById('get_info').addEventListener('click', () => {
@@ -63,8 +61,3 @@ document.getElementById('get_info').addEventListener('click', () => {
       console.error(err);
     });
 });
-
-// function convertCelcToFar(tempInCelc) {
-//   console.log(tempInCelc);
-//   return Math.floor(tempInCelc * 1.8 + 32);
-// }
