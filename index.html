@@ -13,12 +13,13 @@
 <body>
     <nav>
         <img src='ACT-Now-Logo.png' id="notStolenLogo">
-        <a href="src/html/monthlySpecials.html">Monthly Specials</a>
+        <!-- <a href="src/html/monthlySpecials.html">Monthly Specials</a> -->
+        <a href="">Contact Us</a>
+        <a href="">Account</a>
         <a href="src/html/travelTips.html">Travel Tips</a>
     </nav>
     <div id='coverPhoto'></div>
     <section id='welcome'>
-        <!-- <header class='center'>ACT Now Travel Agency LLC.</header> -->
        <div id='leftWelcome'>
         <p>
             Where travel and simplicity meet.
@@ -38,39 +39,66 @@
         <input type="date" name="travelDate" id="dateOfTravel">
         <button id='get_info'>Get Info & Pricing</button>
         <section id='weatherWidget'>
+            <div id="weatherInfo">
+                <p>See the forecast! -></p>
+            </div>
             <div class="weatherHide" id="Dallas">
-                <a target="_blank" href="https://www.booked.net/weather/dallas-26868"><img src="https://w.bookcdn.com/weather/picture/32_26868_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+                <a target="_blank" href="https://www.booked.net/weather/dallas-26868"><img src="https://w.bookcdn.com/weather/picture/32_26868_0_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
             </div>
             <div class="weatherHide" id="Orlando">
-                <a target="_blank" href="https://www.booked.net/weather/orlando-19887"><img src="https://w.bookcdn.com/weather/picture/32_19887_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+                <a target="_blank" href="https://www.booked.net/weather/orlando-19887"><img src="https://w.bookcdn.com/weather/picture/32_19887_0_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
             </div>
             <div class="weatherHide" id="LosAngeles">
-                <a target="_blank" href="https://www.booked.net/weather/los-angeles-18353"><img src="https://w.bookcdn.com/weather/picture/32_18353_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+                <a target="_blank" href="https://www.booked.net/weather/los-angeles-18353"><img src="https://w.bookcdn.com/weather/picture/32_18353_0_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
             </div>
             <div class="weatherHide" id="NewOrleans">
-                <a target="_blank" href="https://www.booked.net/weather/new-orleans-18131"><img src="https://w.bookcdn.com/weather/picture/32_18131_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+                <a target="_blank" href="https://www.booked.net/weather/new-orleans-18131"><img src="https://w.bookcdn.com/weather/picture/32_18131_0_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
             </div>
             <div class="weatherHide" id="NewYorkCity">
-                <a target="_blank" href="https://www.booked.net/weather/new-york-18103"><img src="https://w.bookcdn.com/weather/picture/32_18103_1_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
+                <a target="_blank" href="https://www.booked.net/weather/new-york-18103"><img src="https://w.bookcdn.com/weather/picture/32_18103_0_1_f1c411_250_f39c13_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=34480"  alt="booked.net"/></a>
             </div>
-    
         </section>
-    </div>
-    <div id='rightWelcome'>
-        <section id='superLowFares'>
-            <h2 id='price'></h2>
-            <div>
-                <button id='bookNow' onclick='window.location.href="src/html/confirmation.html"'>Book Now!</button>
-            </div>
+        </div>
+        <div id='rightWelcome'>
+            <section id='superLowFares'>
+                <h2 id='price'></h2>
+                <div>
+                    <button id='bookNow' onclick='window.location.href="src/html/confirmation.html"'>Book Now!</button>
+                </div>
             </section>
         </div>
     </section>
 
-    <!-- <section id='superLowFares'>
-        <h2 id='price'></h2> -->
-    <!-- </section> -->
-        <!-- <a id='priceButtonLocation' href='></a> -->
-        <!-- <button id='bookNow' onclick='window.location.href="src/html/confirmation.html"'>Book Now!</button> -->
+    <section id='specials'>
+        <div id='cancun'>
+            <h2>$600 Cancun Special</h2>
+            <p>Cancún, a Mexican city on the Yucatán Peninsula bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife. It’s composed of 2 distinct areas: the more traditional downtown area, El Centro, and Zona Hotelera, a long,
+                beachfront strip of high-rise hotels, nightclubs, shops and restaurants. Cancun is also a famed destination for students during universities’ spring break period.</p>
+            <img src="https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/d81ac21c-c8bc-9ff2-348a-a7d1672a93af/630x355.jpg" alt="This is Cancun" id="cancunImg">
+        </div>
+        <br><br>
+        <div id='london'>
+            <h2>$1,100 London Special</h2>
+            <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site
+                of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.</p>
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2700&q=80" alt="This is London" id="londonImg">
+        </div>
+        <br><br>
+        <div id='paris'>
+            <h2>$2,000 Paris Special</h2>
+            <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and
+                the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p>
+            <img src="https://images.unsplash.com/photo-1612821058477-8b39080e8dee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80" alt="This is London" id="parisImg">
+        </div>
+        <br><br>
+        <div id='berlin'>
+            <h2>$1,600 Berlin Special</h2>
+            <p>Berlin, Germany’s capital, dates to the 13th century. Reminders of the city's turbulent 20th-century history include its Holocaust memorial and the Berlin Wall's graffitied remains. Divided during the Cold War, its 18th-century Brandenburg
+                Gate has become a symbol of reunification. The city's also known for its art scene and modern landmarks like the gold-colored, swoop-roofed Berliner Philharmonie, built in 1963</p>
+            <img src="https://images.unsplash.com/photo-1546726747-421c6d69c929?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80" alt="This is London" id="berlinImg">
+        </div>
+    </section>
+
 </body>
 
 </html>
