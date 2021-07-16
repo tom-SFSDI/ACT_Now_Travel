@@ -12,6 +12,8 @@ function error(err) {
 }
 window.navigator.geolocation.getCurrentPosition(success, error);
 
+document.getElementById('dateOfTravel').value = new Date().toLocaleDateString('en-CA');
+
 document.getElementById('get_info').addEventListener('click', () => {
   const value = document.getElementById('destination_dropdown').value;
   const airportCodes = [`DFW-sky/`, `MCO-sky/`, `LAX-sky/`, `MSY-sky/`, `JFK-sky/`];
@@ -35,6 +37,7 @@ document.getElementById('get_info').addEventListener('click', () => {
 
   document.getElementById(value).classList.remove('weatherHide');
   document.getElementById(value).classList.add('weatherShow');
+  document.getElementById('weatherInfo').style.display = 'block';
   document.getElementById('bookNow').style.display = 'block';
   const departDate = document.getElementById('dateOfTravel').value;
   const baseURL = `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/ORD-sky/`;
@@ -58,8 +61,3 @@ document.getElementById('get_info').addEventListener('click', () => {
       console.error(err);
     });
 });
-
-// function convertCelcToFar(tempInCelc) {
-//   console.log(tempInCelc);
-//   return Math.floor(tempInCelc * 1.8 + 32);
-// }
