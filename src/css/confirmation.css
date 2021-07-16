@@ -1,3 +1,5 @@
+
+/* Invoice box took a lot of styling to get to look correct...we have learned to avoid tables going forward... */
 .invoiceBox {
     display: none;
     max-width: 800px;
