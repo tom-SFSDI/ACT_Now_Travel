@@ -6,6 +6,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Not stolen but created for free(some version of free) */
 #notStolenLogo {
     max-width: 200px;
     max-height: 150px;
@@ -37,6 +38,7 @@ body {
     font-size: large;
     font-family: fantasy, Arial, Helvetica, sans-serif
 }
+
 
 [type="date"] {
     background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
@@ -91,15 +93,7 @@ nav a:hover {
     font-size: 28px;
 }
 
-/* #bookNow {
-    display: none;
-    float: right;
-    padding: 30px 60px;
-    font-size: 20px;
-    
-    margin-right: 45px;
-} */
-
+/* custom button with hover over effect */
 #bookNow {
     float: right;
     display: none;
@@ -121,6 +115,7 @@ nav a:hover {
     background-color:#4095c6;
 }
 
+/* weather widget is hidden by default and shown based on location selected plus next 3 day forecast */
 .weatherHide {
     display: none;
 }
@@ -147,9 +142,7 @@ nav a:hover {
 #superLowFares {
     color: white;
     float: right;
-    /* padding-right: 75px; */
     margin-bottom: 50px;
-    /* vertical-align: center; */
     font-size: 40px;
     font-style: italic;
 }
@@ -157,17 +150,12 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* #leftWelcome { 
-  max-width: 50%; 
-  display: inline-block; 
-}  */
-
 #rightWelcome {
-
   text-align: right;
 }
 
 
+/* Lot of styling to get the information to display correctly for different resolutions, used flex instead of float */
 /* Monthly Specials Section */
 #londonImg, #cancunImg, #parisImg, #berlinImg {
     width: 100%;
